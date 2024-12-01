@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman", sans-serif;
+      line-height: 1.6;
+      color: #444;
+      background-color: #A888B5;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #8B5DFF;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Home Section */
+    #home {
+      background: linear-gradient(to right, #007BFF, #0056b3);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    #home img {
+      margin-top: 20px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* About Section */
+    #about {
+      background-color: #563A9C;
+      padding: 40px 20px;
+    }
+
+    #about p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Projects Section */
+    #projects {
+      background-color: #0A97B0;
+      padding: 40px 20px;
+    }
+
+    #projects p {
+      color: #555;
+     
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #1C325B;
+      padding: 40px 20px;
+    }
+
+    #contact form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #contact form input, #contact form textarea {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #contact form button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    #contact form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007BFF;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hi, I'm Althea</h1>
+    <p>A passionate web developer and designer!</p>
+    <img src="profile 1.jpg" alt="Profile Picture">
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm Althea Luna, a Freshman at PSU BSCS 1B. <br>I specialize in creating visually appealing and functional web designs while continuously improving my skills.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <img src="tama na.jpg" alt="Project 1">
+      <!-- Updated image path -->
+      <p>One of my projects, is making a website using CSS and HTML.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <img src="ayaw na.jpg" alt="Project 2"> <!-- Updated image path -->
+      <p>Since I am a Computer Science student, I use C++ in programming any project.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" id="name" name="name" placeholder="Full Name">
+      <input type="email" id="email" name="email" placeholder="Email">
+      <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2024 Althea Luna. All Rights Reserved.
+  </footer>
+</body>
+</html>
